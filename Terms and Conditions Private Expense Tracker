@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - Private Expense Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+  <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-4xl w-full my-8">
+
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-2">Terms and Conditions</h1>
+      <p class="text-sm text-gray-500 text-center">Last updated: <span id="last-updated">September 19, 2025</span></p>
+    </header>
+
+    <main class="prose max-w-none text-gray-700">
+
+      <section>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">1. Introduction</h2>
+        <p>These Terms and Conditions govern the use of the mobile application <strong>Private Expense Tracker</strong>, available on Google Play. By downloading, installing, or using the app, you agree to these Terms. If you do not agree, you should not use the app.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">2. Use of the Application</h2>
+        <p>The Private Expense Tracker app is designed for personal expense tracking. You may use the app for private, non-commercial purposes in accordance with these Terms and applicable laws in Bulgaria and the European Union.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">3. Data and Privacy</h2>
+        <p>The app does not collect, store, or process any personal or financial data on external servers. All data entered remains on your device and under your control. No data is transmitted to us or third parties.</p>
+        <p>As no personal data is collected, the General Data Protection Regulation (GDPR) is fully respected.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">4. In-App Purchases</h2>
+        <p>The app offers a one-time, non-recurring in-app purchase to permanently remove the popup advertisement. The purchase is processed securely through Google Play. We do not process or store your payment details.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">5. Intellectual Property</h2>
+        <p>The app, its design, and all associated intellectual property are the exclusive property of the developer. You may not copy, modify, distribute, or reverse engineer the app without prior written permission.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">6. Disclaimer of Warranties</h2>
+        <p>The app is provided "as is" without warranties of any kind. While we aim to ensure functionality and reliability, we do not guarantee that the app will always be available, error-free, or suitable for your specific purposes.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">7. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by Bulgarian and European Union law, we shall not be held liable for any indirect, incidental, or consequential damages arising from your use of the app.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">8. Governing Law</h2>
+        <p>These Terms are governed by and construed in accordance with the laws of the Republic of Bulgaria and applicable European Union legislation. Any disputes shall be resolved in the competent courts of Bulgaria.</p>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">9. Changes to Terms</h2>
+        <p>We may update these Terms from time to time. Significant changes will be communicated through an update to this page. Continued use of the app after changes are posted will constitute your acceptance of the revised Terms.</p>
+      </section>
+
+    </main>
+
+    <footer class="mt-8 text-center text-gray-500 text-sm">
+      <p>If you have any questions about these Terms, please contact us through the developer contact information provided on Google Play.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateElement = document.getElementById('last-updated');
+      const today = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      dateElement.textContent = today.toLocaleDateString('en-US', options);
+    });
+  </script>
+
+</body>
+</html>
